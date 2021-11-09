@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "stormfest:charged_music_disc_stormfest"
+    },
+    "title": "Hi, Voltage!",
+    "description": "Summon a thunderstorm using a Charged Music Disc",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:adventure/root",
+  "criteria": {
+    "hi_voltage": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "items": [
+            "stormfest:charged_music_disc_stormfest"
+          ]
+        },
+        "location": {
+          "block": {
+            "blocks": [
+              "minecraft:jukebox"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 100
+  }
+}

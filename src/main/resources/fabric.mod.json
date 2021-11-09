@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "stormfest",
+  "version": "1.0.0",
+
+  "name": "Charged Music Disc",
+  "description": "Adds a custom \"Charged Music Disc\" item that Charged Creepers drop when killed by Skeletons.\n\nCredits:\nSydist - Programming\nMisterKaze - Music\nGreenBerry - Textures",
+  "authors": [
+    "Sydist",
+    "MisterKaze"
+  ],
+  "contact": {
+    "homepage": "https://discord.gg/ySCQH4PPmC",
+    "sources": ""
+  },
+
+  "license": "CC0-1.0",
+  "icon": "icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.github.sydist.Main"
+    ]
+  },
+  "mixins": [
+    "stormfest.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
